@@ -1,0 +1,897 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEF692C830761CB2002F3280 /* EquipmentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692C730761CB2002F3280 /* EquipmentRepository.swift */; };
+		DEF692CA30761D0C002F3280 /* CoreDataEquipmentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692C930761D0C002F3280 /* CoreDataEquipmentRepository.swift */; };
+		DEF692CC30761D5E002F3280 /* MockEquipmentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692CB30761D5E002F3280 /* MockEquipmentRepository.swift */; };
+		DEF692CF30761DBC002F3280 /* EquipmentLoanError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692CE30761DBC002F3280 /* EquipmentLoanError.swift */; };
+		DEF692D130761DFE002F3280 /* ReordEquipmentLoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692D030761DFE002F3280 /* ReordEquipmentLoan.swift */; };
+		DEF692D330761E47002F3280 /* FindOverdueLoans.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692D230761E47002F3280 /* FindOverdueLoans.swift */; };
+		DEF692D530761ED7002F3280 /* CompleteEquipmentReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692D430761ED7002F3280 /* CompleteEquipmentReturn.swift */; };
+		DEF692E5307621C9002F3280 /* EquipmentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692E4307621C9002F3280 /* EquipmentListViewModel.swift */; };
+		DEF692E83076220B002F3280 /* EquipmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692E73076220B002F3280 /* EquipmentListView.swift */; };
+		DEF692EA30762439002F3280 /* AddEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692E930762439002F3280 /* AddEquipmentView.swift */; };
+		DEF692EC307625D6002F3280 /* EquipmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692EB307625D6002F3280 /* EquipmentDetailView.swift */; };
+		DEF692EE30762732002F3280 /* RecordLoanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692ED30762732002F3280 /* RecordLoanViewModel.swift */; };
+		DEF692F03076274D002F3280 /* RecordLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692EF3076274D002F3280 /* RecordLoanView.swift */; };
+		DEF692F2307628E9002F3280 /* ReturnEquipmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692F1307628E9002F3280 /* ReturnEquipmentViewModel.swift */; };
+		DEF692F430762902002F3280 /* ReturnEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692F330762902002F3280 /* ReturnEquipmentView.swift */; };
+		DEF692F630762AA8002F3280 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692F530762AA8002F3280 /* DashboardViewModel.swift */; };
+		DEF692F830762ABE002F3280 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF692F730762ABE002F3280 /* DashboardView.swift */; };
+		DEF6930130763913002F3280 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF6930030763913002F3280 /* WidgetKit.framework */; };
+		DEF6930330763913002F3280 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF6930230763913002F3280 /* SwiftUI.framework */; };
+		DEF6930E30763915002F3280 /* CampusEquipmentWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DEF692FE30763913002F3280 /* CampusEquipmentWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DEF693253076421B002F3280 /* CampusEquipmentShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DEF6931B3076421A002F3280 /* CampusEquipmentShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEF692DE30762036002F3280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF692AB307610BD002F3280 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF692B2307610BD002F3280;
+			remoteInfo = CampusEquipmentManager;
+		};
+		DEF6930C30763915002F3280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF692AB307610BD002F3280 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF692FD30763913002F3280;
+			remoteInfo = CampusEquipmentWidgetExtension;
+		};
+		DEF693233076421B002F3280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF692AB307610BD002F3280 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF6931A3076421A002F3280;
+			remoteInfo = CampusEquipmentShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DEF6931330763915002F3280 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DEF693253076421B002F3280 /* CampusEquipmentShareExtension.appex in Embed Foundation Extensions */,
+				DEF6930E30763915002F3280 /* CampusEquipmentWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DEF692B3307610BD002F3280 /* CampusEquipmentManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusEquipmentManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF692C730761CB2002F3280 /* EquipmentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentRepository.swift; sourceTree = "<group>"; };
+		DEF692C930761D0C002F3280 /* CoreDataEquipmentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataEquipmentRepository.swift; sourceTree = "<group>"; };
+		DEF692CB30761D5E002F3280 /* MockEquipmentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEquipmentRepository.swift; sourceTree = "<group>"; };
+		DEF692CE30761DBC002F3280 /* EquipmentLoanError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLoanError.swift; sourceTree = "<group>"; };
+		DEF692D030761DFE002F3280 /* ReordEquipmentLoan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReordEquipmentLoan.swift; sourceTree = "<group>"; };
+		DEF692D230761E47002F3280 /* FindOverdueLoans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindOverdueLoans.swift; sourceTree = "<group>"; };
+		DEF692D430761ED7002F3280 /* CompleteEquipmentReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteEquipmentReturn.swift; sourceTree = "<group>"; };
+		DEF692DA30762036002F3280 /* CampusEquipmentManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusEquipmentManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF692E4307621C9002F3280 /* EquipmentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentListViewModel.swift; sourceTree = "<group>"; };
+		DEF692E73076220B002F3280 /* EquipmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentListView.swift; sourceTree = "<group>"; };
+		DEF692E930762439002F3280 /* AddEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEquipmentView.swift; sourceTree = "<group>"; };
+		DEF692EB307625D6002F3280 /* EquipmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDetailView.swift; sourceTree = "<group>"; };
+		DEF692ED30762732002F3280 /* RecordLoanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordLoanViewModel.swift; sourceTree = "<group>"; };
+		DEF692EF3076274D002F3280 /* RecordLoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordLoanView.swift; sourceTree = "<group>"; };
+		DEF692F1307628E9002F3280 /* ReturnEquipmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnEquipmentViewModel.swift; sourceTree = "<group>"; };
+		DEF692F330762902002F3280 /* ReturnEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnEquipmentView.swift; sourceTree = "<group>"; };
+		DEF692F530762AA8002F3280 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		DEF692F730762ABE002F3280 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		DEF692FE30763913002F3280 /* CampusEquipmentWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CampusEquipmentWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF6930030763913002F3280 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DEF6930230763913002F3280 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DEF6931430763958002F3280 /* CampusEquipmentWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CampusEquipmentWidgetExtension.entitlements; sourceTree = "<group>"; };
+		DEF6931B3076421A002F3280 /* CampusEquipmentShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CampusEquipmentShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DEF6930F30763915002F3280 /* Exceptions for "CampusEquipmentWidget" folder in "CampusEquipmentWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DEF692FD30763913002F3280 /* CampusEquipmentWidgetExtension */;
+		};
+		DEF693263076421B002F3280 /* Exceptions for "CampusEquipmentShareExtension" folder in "CampusEquipmentShareExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DEF6931A3076421A002F3280 /* CampusEquipmentShareExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DEF692B5307610BD002F3280 /* CampusEquipmentManager */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CampusEquipmentManager;
+			sourceTree = "<group>";
+		};
+		DEF692DB30762036002F3280 /* CampusEquipmentManagerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CampusEquipmentManagerTests;
+			sourceTree = "<group>";
+		};
+		DEF6930430763913002F3280 /* CampusEquipmentWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DEF6930F30763915002F3280 /* Exceptions for "CampusEquipmentWidget" folder in "CampusEquipmentWidgetExtension" target */,
+			);
+			path = CampusEquipmentWidget;
+			sourceTree = "<group>";
+		};
+		DEF6931C3076421A002F3280 /* CampusEquipmentShareExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DEF693263076421B002F3280 /* Exceptions for "CampusEquipmentShareExtension" folder in "CampusEquipmentShareExtension" target */,
+			);
+			path = CampusEquipmentShareExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEF692B0307610BD002F3280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF692D730762036002F3280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF692FB30763913002F3280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF6930330763913002F3280 /* SwiftUI.framework in Frameworks */,
+				DEF6930130763913002F3280 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF693183076421A002F3280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEF692AA307610BD002F3280 = {
+			isa = PBXGroup;
+			children = (
+				DEF6931430763958002F3280 /* CampusEquipmentWidgetExtension.entitlements */,
+				DEF692E6307621F5002F3280 /* Views */,
+				DEF692E33076219F002F3280 /* ViewModels */,
+				DEF692CD30761D92002F3280 /* Domain */,
+				DEF692C630761C73002F3280 /* Repositories */,
+				DEF692B5307610BD002F3280 /* CampusEquipmentManager */,
+				DEF692DB30762036002F3280 /* CampusEquipmentManagerTests */,
+				DEF6930430763913002F3280 /* CampusEquipmentWidget */,
+				DEF6931C3076421A002F3280 /* CampusEquipmentShareExtension */,
+				DEF692FF30763913002F3280 /* Frameworks */,
+				DEF692B4307610BD002F3280 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEF692B4307610BD002F3280 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEF692B3307610BD002F3280 /* CampusEquipmentManager.app */,
+				DEF692DA30762036002F3280 /* CampusEquipmentManagerTests.xctest */,
+				DEF692FE30763913002F3280 /* CampusEquipmentWidgetExtension.appex */,
+				DEF6931B3076421A002F3280 /* CampusEquipmentShareExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEF692C630761C73002F3280 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DEF692C730761CB2002F3280 /* EquipmentRepository.swift */,
+				DEF692C930761D0C002F3280 /* CoreDataEquipmentRepository.swift */,
+				DEF692CB30761D5E002F3280 /* MockEquipmentRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DEF692CD30761D92002F3280 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DEF692CE30761DBC002F3280 /* EquipmentLoanError.swift */,
+				DEF692D030761DFE002F3280 /* ReordEquipmentLoan.swift */,
+				DEF692D230761E47002F3280 /* FindOverdueLoans.swift */,
+				DEF692D430761ED7002F3280 /* CompleteEquipmentReturn.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DEF692E33076219F002F3280 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DEF692E4307621C9002F3280 /* EquipmentListViewModel.swift */,
+				DEF692ED30762732002F3280 /* RecordLoanViewModel.swift */,
+				DEF692F1307628E9002F3280 /* ReturnEquipmentViewModel.swift */,
+				DEF692F530762AA8002F3280 /* DashboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DEF692E6307621F5002F3280 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEF692E73076220B002F3280 /* EquipmentListView.swift */,
+				DEF692E930762439002F3280 /* AddEquipmentView.swift */,
+				DEF692EB307625D6002F3280 /* EquipmentDetailView.swift */,
+				DEF692EF3076274D002F3280 /* RecordLoanView.swift */,
+				DEF692F330762902002F3280 /* ReturnEquipmentView.swift */,
+				DEF692F730762ABE002F3280 /* DashboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEF692FF30763913002F3280 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEF6930030763913002F3280 /* WidgetKit.framework */,
+				DEF6930230763913002F3280 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEF692B2307610BD002F3280 /* CampusEquipmentManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF692C3307610BF002F3280 /* Build configuration list for PBXNativeTarget "CampusEquipmentManager" */;
+			buildPhases = (
+				DEF692AF307610BD002F3280 /* Sources */,
+				DEF692B0307610BD002F3280 /* Frameworks */,
+				DEF692B1307610BD002F3280 /* Resources */,
+				DEF6931330763915002F3280 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEF6930D30763915002F3280 /* PBXTargetDependency */,
+				DEF693243076421B002F3280 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DEF692B5307610BD002F3280 /* CampusEquipmentManager */,
+			);
+			name = CampusEquipmentManager;
+			packageProductDependencies = (
+			);
+			productName = CampusEquipmentManager;
+			productReference = DEF692B3307610BD002F3280 /* CampusEquipmentManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEF692D930762036002F3280 /* CampusEquipmentManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF692E030762036002F3280 /* Build configuration list for PBXNativeTarget "CampusEquipmentManagerTests" */;
+			buildPhases = (
+				DEF692D630762036002F3280 /* Sources */,
+				DEF692D730762036002F3280 /* Frameworks */,
+				DEF692D830762036002F3280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEF692DF30762036002F3280 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DEF692DB30762036002F3280 /* CampusEquipmentManagerTests */,
+			);
+			name = CampusEquipmentManagerTests;
+			packageProductDependencies = (
+			);
+			productName = CampusEquipmentManagerTests;
+			productReference = DEF692DA30762036002F3280 /* CampusEquipmentManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEF692FD30763913002F3280 /* CampusEquipmentWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF6931030763915002F3280 /* Build configuration list for PBXNativeTarget "CampusEquipmentWidgetExtension" */;
+			buildPhases = (
+				DEF692FA30763913002F3280 /* Sources */,
+				DEF692FB30763913002F3280 /* Frameworks */,
+				DEF692FC30763913002F3280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DEF6930430763913002F3280 /* CampusEquipmentWidget */,
+			);
+			name = CampusEquipmentWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = CampusEquipmentWidgetExtension;
+			productReference = DEF692FE30763913002F3280 /* CampusEquipmentWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DEF6931A3076421A002F3280 /* CampusEquipmentShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF693273076421B002F3280 /* Build configuration list for PBXNativeTarget "CampusEquipmentShareExtension" */;
+			buildPhases = (
+				DEF693173076421A002F3280 /* Sources */,
+				DEF693183076421A002F3280 /* Frameworks */,
+				DEF693193076421A002F3280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DEF6931C3076421A002F3280 /* CampusEquipmentShareExtension */,
+			);
+			name = CampusEquipmentShareExtension;
+			packageProductDependencies = (
+			);
+			productName = CampusEquipmentShareExtension;
+			productReference = DEF6931B3076421A002F3280 /* CampusEquipmentShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEF692AB307610BD002F3280 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					DEF692B2307610BD002F3280 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					DEF692D930762036002F3280 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = DEF692B2307610BD002F3280;
+					};
+					DEF692FD30763913002F3280 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					DEF6931A3076421A002F3280 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = DEF692AE307610BD002F3280 /* Build configuration list for PBXProject "CampusEquipmentManager" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEF692AA307610BD002F3280;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DEF692B4307610BD002F3280 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEF692B2307610BD002F3280 /* CampusEquipmentManager */,
+				DEF692D930762036002F3280 /* CampusEquipmentManagerTests */,
+				DEF692FD30763913002F3280 /* CampusEquipmentWidgetExtension */,
+				DEF6931A3076421A002F3280 /* CampusEquipmentShareExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEF692B1307610BD002F3280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF692D830762036002F3280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF692FC30763913002F3280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF693193076421A002F3280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEF692AF307610BD002F3280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF692CC30761D5E002F3280 /* MockEquipmentRepository.swift in Sources */,
+				DEF692D530761ED7002F3280 /* CompleteEquipmentReturn.swift in Sources */,
+				DEF692EA30762439002F3280 /* AddEquipmentView.swift in Sources */,
+				DEF692D130761DFE002F3280 /* ReordEquipmentLoan.swift in Sources */,
+				DEF692D330761E47002F3280 /* FindOverdueLoans.swift in Sources */,
+				DEF692C830761CB2002F3280 /* EquipmentRepository.swift in Sources */,
+				DEF692F03076274D002F3280 /* RecordLoanView.swift in Sources */,
+				DEF692EC307625D6002F3280 /* EquipmentDetailView.swift in Sources */,
+				DEF692F430762902002F3280 /* ReturnEquipmentView.swift in Sources */,
+				DEF692F830762ABE002F3280 /* DashboardView.swift in Sources */,
+				DEF692E83076220B002F3280 /* EquipmentListView.swift in Sources */,
+				DEF692F630762AA8002F3280 /* DashboardViewModel.swift in Sources */,
+				DEF692EE30762732002F3280 /* RecordLoanViewModel.swift in Sources */,
+				DEF692E5307621C9002F3280 /* EquipmentListViewModel.swift in Sources */,
+				DEF692CA30761D0C002F3280 /* CoreDataEquipmentRepository.swift in Sources */,
+				DEF692CF30761DBC002F3280 /* EquipmentLoanError.swift in Sources */,
+				DEF692F2307628E9002F3280 /* ReturnEquipmentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF692D630762036002F3280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF692FA30763913002F3280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF693173076421A002F3280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEF692DF30762036002F3280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEF692B2307610BD002F3280 /* CampusEquipmentManager */;
+			targetProxy = DEF692DE30762036002F3280 /* PBXContainerItemProxy */;
+		};
+		DEF6930D30763915002F3280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEF692FD30763913002F3280 /* CampusEquipmentWidgetExtension */;
+			targetProxy = DEF6930C30763915002F3280 /* PBXContainerItemProxy */;
+		};
+		DEF693243076421B002F3280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEF6931A3076421A002F3280 /* CampusEquipmentShareExtension */;
+			targetProxy = DEF693233076421B002F3280 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DEF692C1307610BF002F3280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEF692C2307610BF002F3280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEF692C4307610BF002F3280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CampusEquipmentManager/CampusEquipmentManager.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXLKA5L286;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenyu.CampusEquipmentManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEF692C5307610BF002F3280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CampusEquipmentManager/CampusEquipmentManager.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXLKA5L286;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenyu.CampusEquipmentManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DEF692E130762036002F3280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenyu.CampusEquipmentManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampusEquipmentManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CampusEquipmentManager";
+			};
+			name = Debug;
+		};
+		DEF692E230762036002F3280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenyu.CampusEquipmentManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampusEquipmentManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CampusEquipmentManager";
+			};
+			name = Release;
+		};
+		DEF6931130763915002F3280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CampusEquipmentWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXLKA5L286;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CampusEquipmentWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CampusEquipmentWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenyu.CampusEquipmentManager.CampusEquipmentWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEF6931230763915002F3280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CampusEquipmentWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXLKA5L286;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CampusEquipmentWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CampusEquipmentWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenyu.CampusEquipmentManager.CampusEquipmentWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DEF693283076421B002F3280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CampusEquipmentShareExtension/CampusEquipmentShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXLKA5L286;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CampusEquipmentShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CampusEquipmentShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenyu.CampusEquipmentManager.CampusEquipmentShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEF693293076421B002F3280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CampusEquipmentShareExtension/CampusEquipmentShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXLKA5L286;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CampusEquipmentShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CampusEquipmentShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenyu.CampusEquipmentManager.CampusEquipmentShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEF692AE307610BD002F3280 /* Build configuration list for PBXProject "CampusEquipmentManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF692C1307610BF002F3280 /* Debug */,
+				DEF692C2307610BF002F3280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF692C3307610BF002F3280 /* Build configuration list for PBXNativeTarget "CampusEquipmentManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF692C4307610BF002F3280 /* Debug */,
+				DEF692C5307610BF002F3280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF692E030762036002F3280 /* Build configuration list for PBXNativeTarget "CampusEquipmentManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF692E130762036002F3280 /* Debug */,
+				DEF692E230762036002F3280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF6931030763915002F3280 /* Build configuration list for PBXNativeTarget "CampusEquipmentWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF6931130763915002F3280 /* Debug */,
+				DEF6931230763915002F3280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF693273076421B002F3280 /* Build configuration list for PBXNativeTarget "CampusEquipmentShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF693283076421B002F3280 /* Debug */,
+				DEF693293076421B002F3280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEF692AB307610BD002F3280 /* Project object */;
+}
